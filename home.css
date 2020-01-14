@@ -1,0 +1,139 @@
+body{
+	background-color:grey;
+	font-family: sans-serif;
+}
+
+.container{
+	height: 95vh;
+	width: 50vw;
+	background-color: white;
+	display: flex;
+	margin:auto;
+	flex-direction: column;
+}
+.title{
+	width: 100%;
+	height: 10%;
+	display: flex;
+	justify-content: center;
+	border-bottom: 2px solid lightgrey;
+}
+.title h1{
+	color: grey;
+	display: flex;
+}
+.task{
+	width: 100%;
+	height: 10%;
+	font-size: .85rem;
+}
+.task_desc{
+margin-left: 2rem;
+}
+.task_info{
+	border-bottom: 2px solid lightgrey;
+	margin-bottom: 1rem;
+}
+.task_info input{
+	margin-left: 2rem;
+	border:0;
+	width: 50%;
+
+}
+.second_container{
+	margin-top: 1rem;
+	display: flex;
+	flex-direction: row;
+}
+.category{
+	width: 50%;
+	height: 10%;
+	font-size: .85rem;
+	border-right: 2px solid lightgrey;
+	margin-top: 1rem;
+}
+.cat_desc{
+margin-left: 2rem;
+}
+.cat_info{
+	justify-content: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	
+}
+.cat_info_text{
+	margin-left: 2rem;
+	border:0;
+	width: 50%;
+	margin-bottom: 1rem;
+	width: 60%;
+}
+.cat_info_icon{
+	margin-right: .5rem;
+	font-size: 1.2rem
+}
+.date{
+	width: 50%;
+	height: 10%;
+	font-size: .85rem;
+}
+.date_desc{
+margin-left: 2rem;
+}
+.date_info input{
+	margin-left: 2rem;
+	border:0;
+	width: 50%;
+}
+.button_container{
+	width: 100%;
+	height: 50%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	border-bottom: 2px solid lightgrey;
+	border-top:2px solid lightgrey;
+}
+.add{
+    width:25%;
+	height:50%;
+}
+.add button{
+	background-color: black;
+	color: white;
+	margin-right:0.1rem;
+    width:100%;
+    height: 100%;;
+	border-radius: 4%;
+	display: flex;
+	flex-direction: row;
+    align-items: center;
+	border:0;
+	justify-content: space-evenly;
+}
+.delete{
+    width:25%;
+    height: 50%;
+}
+.delete form button{
+	background-color: red;
+	color:white;
+	width:100%;
+	height:100%;
+	border-radius: 4%;
+	margin-left:0.1rem;
+	display: flex;
+	flex-direction: row;
+    align-items: center;
+    border:0;
+} 
+.delete form button{
+	display: flex;
+	justify-content: space-evenly;
+}
+.item{
+	margin-top: 3rem;
+	border-bottom: 1px solid grey;
+}

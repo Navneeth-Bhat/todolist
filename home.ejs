@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>
+            To Do List
+        </title>
+        <script src="https://kit.fontawesome.com/826cec0cde.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/css/home.css">
+    </head>
+    <body>
+<body>
+<div class="container" id="list_container">
+	<div class="title">
+		<h1>To Do App</h1>
+	</div>
+ <form action="/create-task" method="POST">
+	<div id="task" class="task">
+		<div class="task_desc">
+			<p>DESCRIPTION</p>
+		</div>
+		<div class="task_info">
+			<input type="text" name="description" placeholder="What do you need to do?">
+		</div>
+	</div>
+	<div class="second_container">
+	<div id="date" class="date">
+		<div class="date_desc">
+			<p>DUE DATE</p>
+		</div>
+		<div class="date_info">
+			<input type="date" name="date">
+		</div>
+	</div>
+	</div>
+    <div class="button_container">
+    <div class="add">
+            <button type="submit">Add<i class="fas fa-plus"></i></button>
+		</form>
+    </div>
+    <div class="delete">
+        <form action="/delete-task" method="POST">
+            <button type="submit">Delete<i class="fas fa-trash"></i></button>
+        </form>
+    </div> 
+    </div>
+    <div class="task_container">
+    <% for (let i of item){ %>
+    <div class="item">
+	<p>
+    <input type="checkbox">
+    <%=i.description%>
+    <%=i.date%>
+	<%=i.category%>
+	</p>
+    </div>
+    <%}%>
+    </div>
+        <script type="text/javascript" src="/js/home.js"></script>
+    </body>
+</html>
